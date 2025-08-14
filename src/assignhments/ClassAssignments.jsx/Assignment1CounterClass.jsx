@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Title from '../../../Components/Title';
+import Title from '../../Components/Title';
+import { Link } from 'react-router-dom';
 
-class Assignment1Counter extends Component {
+class Assignment1CounterClass extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,12 +31,12 @@ class Assignment1Counter extends Component {
     const { addNumber } = this.state;
 
     return (
-      <div className="flex justify-center items-center h-screen w-screen">
+      <div className="flex justify-center items-center h-92  w-screen">
         <div className="flex flex-col gap-10">
           <div className="w-full text-center text-2xl font-bold">
-            <Title Title={'Counter App'} />
+            <Title Title="Class - Counter App" />
           </div>
-          <div className="flex items-center w-full border-2 border-gray-400 rounded-3xl">
+          <div className="flex items-center text-center justify-center rounded-3xl">
             <button
               className="bg-red-400 p-0 text-white font-bold text-2xl rounded-tl-2xl rounded-bl-2xl px-5"
               onClick={this.handleMinusBtn}
@@ -50,10 +51,14 @@ class Assignment1Counter extends Component {
               +
             </button>
           </div>
+          <Link
+            className='text-blue-500'
+            to={'/counter-app'}> Class Component - Counter App</Link>
+
         </div>
       </div>
     );
   }
 }
 
-export default Assignment1Counter;
+export default Assignment1CounterClass;
