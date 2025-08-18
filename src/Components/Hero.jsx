@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='p-4'>
           <ul>
             <li>Assignment-1 <Link to='/counter-app'>Counter app</Link></li>
-            <li>Assignment-2</li>
+            <li>Assignment-2 <Link to='/todo-app'>  To-Do App</Link></li>
             <li>Assignment-3</li>
             <li>Assignment-4</li>
           </ul>

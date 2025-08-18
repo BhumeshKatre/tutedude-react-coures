@@ -16,7 +16,7 @@ const Assignment1Counter = () => {
   }
 
   return (
-    <div className='flex justify-center items-center h-92  w-screen  '>
+    <div className='flex justify-center items-center h-92  w-screen border-l-5 mt-5 border-green-400 rounded-2xl bg-amber-100 border-t-2'>
       <div className="flex flex-col gap-10 ">
         <div className='w-full text-center text-2xl  font-bold'>
           <Title Title={'Function - Counter App'} />
@@ -29,10 +29,6 @@ const Assignment1Counter = () => {
             className='bg-green-400 text-white font-bold text-2xl rounded-tr-2xl rounded-br-2xl px-5'
             onClick={handlePlusBtn}>+</button>
         </div>
-        <Link
-          className='text-blue-500'
-          to={'/classscomponent-assignment'}> Class Component - Counter App</Link>
-
       </div>
       
 
