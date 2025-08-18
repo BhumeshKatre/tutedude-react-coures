@@ -31,7 +31,7 @@ class Assignment1CounterClass extends Component {
     const { addNumber } = this.state;
 
     return (
-      <div className="flex justify-center items-center h-92  w-screen border-l-5 border-t-2 mt-5 border-blue-400 rounded-2xl bg-green-200">
+      <div className="flex justify-center items-center h-92   border-l-5 border-t-2 mt-5 border-blue-400 rounded-2xl bg-green-200">
         <div className="flex flex-col gap-10">
           <div className="w-full text-center text-2xl font-bold">
             <Title Title="Class - Counter App" />

@@ -16,7 +16,7 @@ const Assignment1Counter = () => {
   }
 
   return (
-    <div className='flex justify-center items-center h-92  w-screen border-l-5 mt-5 border-green-400 rounded-2xl bg-amber-100 border-t-2'>
+    <div className='flex justify-center items-center h-92  md:wd-[100vw] border-l-5 mt-5 border-green-400 rounded-2xl bg-amber-100 border-t-2'>
       <div className="flex flex-col gap-10 ">
         <div className='w-full text-center text-2xl  font-bold'>
           <Title Title={'Function - Counter App'} />
