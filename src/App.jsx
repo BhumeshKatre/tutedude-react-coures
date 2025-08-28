@@ -14,8 +14,9 @@ const App = () => {
           <Route index element={<Hero />} />
           <Route path="counter-app" element={<Assignment1 />} />
           <Route path="todo-app" element={<Assignment2ToDoApp />} />
-          <Route path="shoes-app" element={<Assigment3 />} />
         </Route>
+        <Route path="shoes-app" element={<Assigment3 />} />
+
       </Routes>
     </>
   );

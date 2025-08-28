@@ -4,6 +4,11 @@ import Card from "./Components/Card";
 import AvailableShoes from "./Components/AvailableShoes";
 import Cart from "./Components/Cart";
 import LogoImg from "./img/logo.jpg";
+import Shoes1 from "./img/p1.png";
+import Shoes2 from "./img/p2.png";
+import Shoes3 from "./img/p3.png";
+import Shoes4 from "./img/p4.png";
+import Shoes5 from "./img/p5.png";
 
 const Index = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -11,27 +16,27 @@ const Index = () => {
     {
       name: "SoleMates Brown Boots - ",
       price: "119",
-      img: LogoImg,
+      img: Shoes1,
     },
     {
       name: "TrailBlazer Black Sneakers - ",
       price: "89",
-      img: LogoImg,
+      img: Shoes2,
     },
     {
       name: "UrbanWalk White Trainers - ",
       price: "99",
-      img: LogoImg,
+      img: Shoes3,
     },
     {
       name: "PeakPro Hiking Shoes - ",
       price: "139",
-      img: LogoImg,
+      img: Shoes5,
     },
     {
       name: "MetroFlex Loafers - ",
       price: "79",
-      img: LogoImg,
+      img: Shoes4,
     },
     {
       name: "SwiftStep Running Shoes - ",
@@ -107,7 +112,6 @@ const Index = () => {
   console.log(cartItem);
   return (
     <>
-      <h1 className=" my-5">Assignment-3 : Shoes App </h1>
       <div className="bg-black p-5">
         <Navbar />
 
@@ -116,10 +120,10 @@ const Index = () => {
           <div className="grid grid-cols-2 gap-2">
             {products.map((item, indx) => (
               <div key={indx} className="card bg-pink-400 p-4 rounded-sm">
-                <img className="w-full h-36" srcSet={LogoImg} alt="" />
+                <img className="w-full h-36" srcSet={item.img} alt="" />
                 <div className="p-2">
                   <p>{item.name}</p>
-                  <p className="font-bold">Price:${item.price}</p>
+                  <p className="font-bold">Price:{item.price}</p>
 
                 </div>
                 <div className="text-center">
@@ -149,7 +153,7 @@ const Index = () => {
                       <div className="flex gap-2 items-center ">
                         <button
                           onClick={() => handleIncreseBtn(item)}
-                          className="bg-orange-300 p-1 rounded-lg font-bold w-6"
+                          className="bg-orange-300 p-1 rounded-lg font-bold w-6 hover:bg-green-500"
                         >
                           {" "}
                           +{" "}
@@ -158,7 +162,7 @@ const Index = () => {
                         <button
                           disabled={item.quantity <= 0 }
                           onClick={() => decreseQuantity(item)}
-                          className="bg-orange-300  p-1 rounded-lg font-bold w-6 disabled:bg-orange-200"
+                          className="bg-orange-300  p-1 rounded-lg font-bold w-6 disabled:bg-orange-200 hover:bg-red-500"
                         >
                           {" "}
                           -{" "}
