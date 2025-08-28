@@ -13,7 +13,7 @@ const Hero = () => {
           <ul>
             <li>Assignment-1 <Link to='/counter-app'>Counter app</Link></li>
             <li>Assignment-2 <Link to='/todo-app'>  To-Do App</Link></li>
-            <li>Assignment-3</li>
+            <li>Assignment-3  <Link to='Shoes-app' >Shoes App </Link></li>
             <li>Assignment-4</li>
           </ul>
         </div>
