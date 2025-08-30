@@ -11,10 +11,14 @@ const Assignment2ToDoApp = () => {
   };
 
   const handleSubmit = () => {
-    if (!newInput) return;
+    if (!newInput) {
+      alert("Please Enter Task...");
+      return
+    };
     const updatedTodos = [...todos, newInput];
     setTodos(updatedTodos);
     localStorage.setItem("todoss", JSON.stringify(updatedTodos));
+    alert('Your Task Added Succesfully.')
     setNewInput("");
   };
 
@@ -68,7 +72,7 @@ const Assignment2ToDoApp = () => {
               <h1 className="py-4 font-bold">Your Todoss</h1>
               {todos ? (
                 todos.map((todo, indx) => (
-                  <p
+                  <div
                     key={indx}
                     className="flex gap-1 bg-sky-300 p-2 rounded-lg justify-between mb-2"
                   >
@@ -85,7 +89,7 @@ const Assignment2ToDoApp = () => {
                         <MdDelete />{" "}
                       </button>
                     </div>
-                  </p>
+                  </div>
                 ))
               ) : (
                 <div className="flex gap-2 items-center">
