@@ -28,7 +28,7 @@ This repository contains solutions to various React JS assignments, demonstratin
 
 ## 🚀 Deployment
 
-View the live project here: [Your Deploy Link](https://tutedude-react.netlify.app/)
+View the live project here: [https://tutedude-react.netlify.app/](https://tutedude-react.netlify.app/)
 
 ## 📚 Assignments Overview
 
@@ -66,4 +66,4 @@ npm run dev
 
 ---
 
-[Deploy Link](https://tutedude-react.netlify.app/)
+[Visit Here ](https://tutedude-react.netlify.app/)
