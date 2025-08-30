@@ -1,6 +1,6 @@
 import React from "react";
-import Assignment1Counter from "../assignhments/FunctionAssignments.jsx/.qodo/Assignment_1Counter";
-import Assignment1CounterClass from "../assignhments/ClassAssignments.jsx/Assignment1CounterClass";
+import Assignment1Counter from '../assignhments/FunctionAssignments.jsx/Assignment_1Counter'
+import Assignment1CounterClass from '../assignhments/ClassAssignments.jsx/Assignment1CounterClass';
 
 const Assignment1 = () => {
   return (

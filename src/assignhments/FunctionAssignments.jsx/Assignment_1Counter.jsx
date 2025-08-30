@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Title from '../../../Components/Title';
+import Title from '../../Components/Title';
 import { Link } from 'react-router-dom';
 
 const Assignment1Counter = () => {
